@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shahzod & Dilnavo</title>
+<meta name="description" content="To'yimizga taklif etamiz · 18-noyabr, Chorshanba, 17:00 · Tojmahal, Olmaliq">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shahzod & Dilnavo — To'y taklifnomasi">
+<meta property="og:description" content="To'yimizga taklif etamiz · 18-noyabr, Chorshanba, 17:00 · Tojmahal, Olmaliq">
+<meta property="og:url" content="https://shakhzod985-design.github.io/Shahzod-D/">
+<meta property="og:image" content="https://shakhzod985-design.github.io/Shahzod-D/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://shakhzod985-design.github.io/Shahzod-D/preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add("js", "locked");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #0F3B2E;          /* emerald */
+    --night-2: #1B5E48;
+    --ivory: #F2EEDF;
+    --paper: #FAF7EC;
+    --gold: #CDAA62;           /* ornaments, large numerals */
+    --gold-light: #E6CF94;     /* gold on dark */
+    --gold-ink: #17513F;       /* gold text on light (readable) */
+    --text: #1A2A23;
+    --muted-dark: #BCCDC3;
+    --muted-light: #5F7268;
+    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --script: "Great Vibes", "Snell Roundhand", cursive;
+    --sans: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --lattice:
+      linear-gradient(45deg, rgba(205,170,98,.12) 1px, transparent 1px),
+      linear-gradient(-45deg, rgba(205,170,98,.12) 1px, transparent 1px);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  html.locked, html.locked body { overflow: hidden; height: 100%; }
+  body { font-family: var(--serif); background: var(--night); color: var(--ivory); -webkit-font-smoothing: antialiased; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  .lang { position: fixed; top: 14px; left: 14px; z-index: 80; display: flex; gap: 6px; }
+  .lang button {
+    width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(230,208,160,.5);
+    background: rgba(15,59,46,.85); color: var(--gold-light);
+    font: 500 12px var(--sans); letter-spacing: .05em; cursor: pointer; backdrop-filter: blur(6px);
+  }
+  .lang button[aria-pressed="true"] { background: var(--gold-light); color: var(--night); border-color: var(--gold-light); }
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; }
+  .light button:focus-visible, .light input:focus-visible, .light textarea:focus-visible { outline-color: var(--gold-ink); }
+
+  section { width: 100%; padding: 88px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .wrap { width: 100%; max-width: 460px; }
+  .dark { background-color: var(--night); background-image: var(--lattice); background-size: 40px 40px; color: var(--ivory); }
+  .light { background: var(--ivory); color: var(--text); }
+
+  .small { font: 400 11px/1.7 var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--gold-light); }
+  .light .small { color: var(--gold-ink); }
+  .title { font: 500 clamp(34px, 9.5vw, 46px)/1.15 var(--serif); color: var(--gold-light); }
+  .light .title { color: var(--gold-ink); }
+  .script { font-family: var(--script); font-weight: 400; color: var(--gold-light); line-height: 1.05; }
+  .light .script { color: var(--gold-ink); }
+
+  .divider { display: flex; align-items: center; gap: 14px; justify-content: center; color: var(--gold); margin: 28px auto; width: 190px; }
+  .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: currentColor; opacity: .6; }
+  .orn { width: 20px; height: 20px; color: var(--gold); flex: none; }
+
+  .btn {
+    margin-top: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 15px 34px; border-radius: 999px; border: 1px solid var(--gold-light);
+    background: transparent; color: var(--gold-light); font: 400 12px var(--sans); letter-spacing: .2em; text-transform: uppercase;
+    cursor: pointer; text-decoration: none;
+  }
+  .btn:hover { background: var(--gold-light); color: var(--night); }
+  .btn.solid { background: linear-gradient(135deg, #e0c58e, #a8864a); color: #1a150b; border: none; margin-top: 16px; }
+  .btn.solid:hover { filter: brightness(1.07); color: #1a150b; }
+
+  /* ---------- opening gate (the one big moment) ---------- */
+  .gate { min-height: 100svh; justify-content: center; position: relative; overflow: hidden; padding: 70px 22px 50px; z-index: 50; }
+  .gate[hidden] { display: none; }
+  html.js .gate { position: fixed; inset: 0; background: none; }
+  .door { display: none; }
+  html.js .door {
+    display: block; position: absolute; top: 0; bottom: 0; width: 50.2%;
+    background-color: var(--night); background-image: var(--lattice), radial-gradient(ellipse at 50% 40%, #1a5744 0%, var(--night) 70%);
+    background-size: 40px 40px, 100% 100%;
+    transition: transform 1.3s cubic-bezier(.75,0,.2,1) .35s;
+  }
+  .door.l { left: 0; border-right: 1px solid rgba(230,208,160,.55); }
+  .door.r { right: 0; border-left: 1px solid rgba(230,208,160,.55); }
+  .gate.open .door.l { transform: translateX(-102%); }
+  .gate.open .door.r { transform: translateX(102%); }
+  .gate-inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; transition: opacity .45s ease; }
+  .gate.open .gate-inner { opacity: 0; pointer-events: none; }
+  .gate-star { position: relative; width: min(74vw, 310px); aspect-ratio: 1; margin: 30px 0 26px; }
+  .gate-star svg { width: 100%; height: 100%; color: var(--gold-light); overflow: visible; }
+  .gate-star rect, .gate-star circle { fill: none; stroke: currentColor; stroke-width: .7; }
+  .gate-star .faint { opacity: .45; }
+  .mono { position: absolute; inset: 0; display: grid; place-items: center; font: 400 clamp(40px, 12.5vw, 58px)/1 var(--script); color: var(--gold-light); padding-bottom: 8px; }
+  .gate .lead { font: 300 12px/2 var(--sans); letter-spacing: .22em; text-transform: uppercase; max-width: 290px; color: var(--ivory); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .gate-star svg { animation: spin 120s linear infinite; }
+    .gate-star rect.draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.6s ease forwards; }
+    .gate-star rect.draw:nth-of-type(2) { animation-delay: .35s; }
+    .gate-star rect.draw:nth-of-type(3) { animation-delay: .7s; }
+    .gate-star rect.draw:nth-of-type(4) { animation-delay: 1.05s; }
+    .mono { animation: fade 1.2s ease 1.5s both; }
+    .gate .small, .gate .lead, .gate .btn { animation: fade 1.2s ease 2s both; }
+  }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+  /* ---------- opening gate: emerald & gold ---------- */
+  .gate.dark { background-color: var(--night); }
+  html.js .door { background-color: var(--night); background-image: var(--lattice), radial-gradient(ellipse at 50% 40%, #1a5744 0%, var(--night) 72%); }
+  .gate .small { color: var(--gold-light); }
+  .gate .lead { color: var(--ivory); }
+  .gate-star svg { color: var(--gold-light); }
+  .gate .mono { font: italic 600 clamp(30px, 9.5vw, 44px)/1 "Playfair Display", Georgia, serif; letter-spacing: .03em; color: var(--gold-light); padding-bottom: 0; }
+
+  /* ---------- invitation arch ---------- */
+  .arch {
+    background: var(--paper); border: 1px solid var(--gold); border-radius: 230px 230px 14px 14px;
+    padding: 92px 30px 46px; position: relative;
+    box-shadow: inset 0 0 0 9px var(--paper), inset 0 0 0 10px rgba(205,170,98,.7), 0 24px 60px rgba(10,40,30,.16);
+  }
+  .arch > .orn { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); width: 26px; height: 26px; }
+  .arch .text { font: 400 22px/1.6 var(--serif); margin: 20px 0 0; color: var(--text); }
+  .arch .names { font-size: clamp(46px, 14vw, 64px); margin-top: 12px; }
+  .arch .regards { font: 400 11px var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--muted-light); }
+  .arch .thanks { font: italic 400 19px/1.55 var(--serif); color: var(--muted-light); margin-top: 26px; }
+
+  /* ---------- date ---------- */
+  .dayno { font: 500 clamp(96px, 30vw, 132px)/.9 var(--serif); color: var(--gold); margin-top: 8px; }
+  .monthyear { font: 500 clamp(28px, 8vw, 36px) var(--serif); color: var(--gold-ink); margin-top: 8px; }
+  .weekday { font: italic 400 21px var(--serif); color: var(--muted-light); margin-top: 6px; }
+  .count { display: grid; grid-template-columns: repeat(4, 1fr); margin: 30px 0 4px; }
+  .count div { padding: 6px 2px; border-left: 1px solid rgba(23,81,63,.30); }
+  .count div:first-child { border-left: 0; }
+  .count b { display: block; font: 500 38px/1.1 var(--serif); color: var(--text); font-variant-numeric: tabular-nums; }
+  .count span { font: 400 10px var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--muted-light); }
+
+  .cal { margin: 44px auto 0; width: 100%; max-width: 330px; }
+  .cal h3 { font: 500 14px var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 16px; }
+  .cal .grid { display: grid; grid-template-columns: repeat(7, 1fr); row-gap: 6px; font: 400 15px var(--sans); }
+  .cal .dow { font-size: 10px; letter-spacing: .08em; color: var(--muted-light); padding-bottom: 6px; }
+  .cal .d { height: 38px; display: grid; place-items: center; color: #2f4a3e; }
+  .cal .d.on { background: var(--gold); color: var(--paper); border-radius: 50%; font-weight: 500; }
+
+  .timeline { margin: 56px auto 0; width: 100%; max-width: 340px; text-align: left; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 66px; top: 8px; bottom: 8px; width: 1px; background: rgba(23,81,63,.40); }
+  .timeline .row { display: flex; align-items: baseline; padding: 12px 0; position: relative; }
+  .timeline time { width: 66px; font: 500 23px var(--serif); color: var(--gold-ink); }
+  .timeline .row::after { content: ""; position: absolute; left: 62px; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: var(--ivory); border: 1px solid var(--gold-ink); }
+  .timeline span { padding-left: 28px; font: 400 12px/1.5 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: #2f4a3e; }
+
+  /* ---------- venue ---------- */
+  .venue-name { font-size: clamp(48px, 15vw, 68px); margin: 8px 0 4px; }
+  .venue-sub { font: italic 400 21px var(--serif); color: var(--muted-dark); }
+  .map { margin-top: 32px; border-radius: 230px 230px 14px 14px; overflow: hidden; border: 1px solid var(--gold); height: 340px; box-shadow: 0 0 0 7px var(--night), 0 0 0 8px rgba(230,208,160,.45); }
+  .map iframe { width: 100%; height: 100%; border: 0; display: block; filter: grayscale(.4) contrast(.95); }
+
+  /* ---------- forms ---------- */
+  form { text-align: left; margin-top: 30px; }
+  input[type=text], textarea {
+    width: 100%; font: 400 16px var(--sans); color: var(--text); background: var(--paper); border: 1px solid rgba(23,81,63,.30);
+    border-radius: 10px; padding: 15px 16px; margin-bottom: 12px; resize: vertical;
+  }
+  textarea { min-height: 110px; }
+  input::placeholder, textarea::placeholder { color: #86998f; }
+  .choice { display: grid; gap: 10px; margin-bottom: 14px; }
+  .choice label { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 10px; background: var(--paper); border: 1px solid rgba(23,81,63,.30); font: 400 15px var(--sans); cursor: pointer; }
+  .choice input { accent-color: var(--gold-ink); width: 18px; height: 18px; }
+  .choice label:has(input:checked) { border-color: var(--gold-ink); box-shadow: inset 0 0 0 1px var(--gold-ink); }
+  .form .btn.solid { width: 100%; }
+  .note { font: 400 14px var(--sans); color: #8a3b2a; min-height: 20px; margin: 4px 0 0; }
+  .ok { font: italic 500 24px/1.5 var(--serif); color: var(--gold-ink); margin-top: 26px; }
+  .ok[hidden], form[hidden] { display: none; }
+
+  .wishes { margin-top: 34px; display: grid; gap: 12px; text-align: left; }
+  .wish { background: var(--paper); border-left: 2px solid var(--gold); padding: 18px 20px 14px; }
+  .wish p { font: italic 400 20px/1.5 var(--serif); color: var(--text); overflow-wrap: anywhere; }
+  .wish small { display: block; margin-top: 10px; font: 500 11px var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); }
+  .empty { font: italic 400 19px var(--serif); color: var(--muted-light); }
+
+  footer { padding: 80px 22px 100px; text-align: center; background: var(--ivory); color: var(--text); }
+  footer .orn { width: 30px; height: 30px; margin: 0 auto 14px; display: block; color: var(--gold); }
+  footer .script { font-size: 58px; color: var(--gold-ink); }
+  footer .see { font: italic 400 22px var(--serif); color: var(--muted-light); margin-top: 18px; }
+  footer p.date { font: 400 12px var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--gold-ink); margin-top: 18px; }
+
+  /* light-section outline buttons */
+  .light .btn:not(.solid) { border-color: var(--gold-ink); color: var(--gold-ink); }
+  .light .btn:not(.solid):hover { background: var(--gold-ink); color: var(--paper); }
+
+  /* program heading */
+  .program { margin-top: 56px; }
+
+  /* RSVP panel: same double frame as the invitation arch */
+  .panel {
+    background: var(--paper); border: 1px solid var(--gold); border-radius: 14px; padding: 62px 26px 34px; position: relative;
+    box-shadow: inset 0 0 0 7px var(--paper), inset 0 0 0 8px rgba(205,170,98,.65), 0 18px 44px rgba(10,40,30,.12);
+  }
+  .panel > .orn { position: absolute; top: 26px; left: 50%; transform: translateX(-50%); width: 26px; height: 26px; }
+  .panel input[type=text], .panel .choice label { background: var(--ivory); }
+  .panel form { margin-top: 24px; }
+
+  /* guest book on dark */
+  .dark input[type=text], .dark textarea { background: rgba(255,255,255,.06); color: var(--ivory); border-color: rgba(230,208,160,.4); }
+  .dark input::placeholder, .dark textarea::placeholder { color: #9db8aa; }
+  .dark .note { color: #f0a894; }
+  .dark .empty { color: var(--muted-dark); }
+  .book-sub { font: italic 400 21px var(--serif); color: var(--muted-dark); margin-top: 8px; }
+  .cal .d.on { background: var(--gold-ink); color: var(--paper); }
+</style>
+</head>
+<body>
+
+<!-- ============ EDIT YOUR DETAILS HERE ============ -->
+<script>
+const CONFIG = {
+  groom: "Shahzod",
+  bride: "Dilnavo",
+  monogram: "SH & D",                 // letters shown inside the star on the first screen
+  date: "2026-11-18T17:00:00",       // YYYY-MM-DDTHH:MM:SS
+  venueName: "Tojmahal",
+  address: "Ulug'bek ko'chasi 9, Olmaliq",
+  mapQuery: "Tozhmakhal, Ulugbek 9, Almalyk, Tashkent Region",
+  mapLink: "https://maps.app.goo.gl/YTeWbiskYVcbmYXt9",   // opens when guests tap the route button
+  whatsapp: "",                       // e.g. "998901234567" — RSVP then opens a WhatsApp message to you
+  schedule: [
+    ["16:30", "welcome"],
+    ["17:00", "start"],
+    ["18:00", "dinner"],
+    ["20:00", "dance"],
+    ["22:00", "end"]
+  ]
+};
+</script>
+<!-- ================================================= -->
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star8" viewBox="-12 -12 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1">
+        <rect x="-7" y="-7" width="14" height="14"/>
+        <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)"/>
+      </g>
+      <circle r="1.7" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="lang" role="group" aria-label="Til / Язык / Language">
+  <button data-lang="uz" aria-pressed="true">UZ</button>
+  <button data-lang="ru" aria-pressed="false">RU</button>
+  <button data-lang="en" aria-pressed="false">EN</button>
+</div>
+
+<!-- opening gate -->
+<section class="gate dark" id="gate">
+  <div class="door l"></div><div class="door r"></div>
+  <div class="gate-inner">
+    <p class="small" data-i18n="intro1">Aziz va qadrli insonlar!</p>
+    <div class="gate-star">
+      <svg viewBox="-80 -80 160 160" aria-hidden="true">
+        <circle r="77" class="faint"/>
+        <circle r="73" class="faint"/>
+        <rect class="draw" pathLength="1" x="-52" y="-52" width="104" height="104"/>
+        <rect class="draw" pathLength="1" x="-52" y="-52" width="104" height="104" transform="rotate(22.5)"/>
+        <rect class="draw" pathLength="1" x="-52" y="-52" width="104" height="104" transform="rotate(45)"/>
+        <rect class="draw" pathLength="1" x="-52" y="-52" width="104" height="104" transform="rotate(67.5)"/>
+        <circle r="38" class="faint"/>
+      </svg>
+      <div class="mono" id="mono">SH &amp; D</div>
+    </div>
+    <p class="lead" data-i18n="intro2">Eng baxtli kunimizni siz bilan baham ko'rmoqchimiz</p>
+    <button class="btn" id="openBtn" type="button" data-i18n="open">Taklifnomani ochish</button>
+  </div>
+</section>
+
+<section class="light" id="invite">
+  <div class="wrap arch">
+    <svg class="orn" aria-hidden="true"><use href="#star8"/></svg>
+    <p class="small" data-i18n="dear">Hurmatli mehmonlarimiz</p>
+    <p class="text" id="inviteText">Ikki yurak bir umrga qo'shiladigan quvonchli kunda sizni nikoh to'yimizga, “Tojmahal” to'yxonasiga mehr bilan taklif etamiz</p>
+    <div class="divider"><svg class="orn" aria-hidden="true"><use href="#star8"/></svg></div>
+    <p class="regards" data-i18n="regards">Hurmat va ehtirom bilan,</p>
+    <div class="script names" id="names">Shahzod &amp; Dilnavo</div>
+    <p class="thanks" data-i18n="thanks">Tashrifingiz davramizga ziynat, quvonchimizga to'lalik bag'ishlaydi. Duolaringizni kutamiz.</p>
+  </div>
+</section>
+
+<section class="light" id="date" style="padding-top:20px">
+  <div class="wrap">
+    <p class="small" data-i18n="date">Sana</p>
+    <div class="dayno" id="dayno">18</div>
+    <div class="monthyear" id="monthyear">Noyabr 2026</div>
+    <div class="weekday" id="weekday">Chorshanba, 18:00</div>
+    <div class="divider"><svg class="orn" aria-hidden="true"><use href="#star8"/></svg></div>
+    <p class="small" data-i18n="left">Baxtli kunimizgacha qolgan vaqt</p>
+    <div class="count">
+      <div><b id="cd-d">00</b><span data-i18n="days">Kun</span></div>
+      <div><b id="cd-h">00</b><span data-i18n="hours">Soat</span></div>
+      <div><b id="cd-m">00</b><span data-i18n="mins">Daqiqa</span></div>
+      <div><b id="cd-s">00</b><span data-i18n="secs">Soniya</span></div>
+    </div>
+    <div class="cal">
+      <h3 id="calTitle">Noyabr 2026</h3>
+      <div class="grid" id="calGrid"></div>
+    </div>
+    <p class="small program" data-i18n="program">Kecha dasturi</p>
+    <div class="timeline" id="timeline" style="margin-top:22px">
+      <div class="row"><time>17:30</time><span>Mehmonlarni kutib olish</span></div>
+      <div class="row"><time>18:00</time><span>To'y marosimi boshlanishi</span></div>
+      <div class="row"><time>19:00</time><span>Dasturxon va tabriklar</span></div>
+      <div class="row"><time>21:00</time><span>Raqs va ko'ngilochar dastur</span></div>
+      <div class="row"><time>22:00</time><span>Kechaning yakuni</span></div>
+    </div>
+    <button class="btn" id="calBtn" type="button" data-i18n="addCal">Taqvimga qo'shish</button>
+  </div>
+</section>
+
+<section class="dark" id="venue">
+  <div class="wrap">
+    <p class="small" data-i18n="venue">To'yxona</p>
+    <div class="script venue-name" id="venueName">Tojmahal</div>
+    <p class="venue-sub" id="venueAddr">Ulug'bek ko'chasi 9, Olmaliq</p>
+    <div class="divider"><svg class="orn" aria-hidden="true"><use href="#star8"/></svg></div>
+    <h2 class="title" data-i18n="location">Joylashuv</h2>
+    <p class="venue-sub" style="margin-top:8px" data-i18n="locSub">Quvonch va mehr davrasi shu yerda to'planadi</p>
+    <div class="map"><iframe id="mapFrame" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <a class="btn" id="routeBtn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/YTeWbiskYVcbmYXt9" data-i18n="route">Marshrutni ochish</a>
+  </div>
+</section>
+
+<section class="light" id="rsvp" style="padding-top:10px">
+  <div class="wrap panel">
+    <svg class="orn" aria-hidden="true"><use href="#star8"/></svg>
+    <h2 class="title" data-i18n="rsvpTitle">Davramizga kelasizmi?</h2>
+    <p style="font:italic 400 21px var(--serif);color:var(--muted-light);margin-top:8px" data-i18n="rsvpSub">Javobingizni oldindan bilsak, quvonamiz</p>
+    <form class="form" id="rsvpForm" novalidate>
+      <input type="text" id="rsvpName" placeholder="Ismingizni kiriting" data-i18n-ph="yourName" autocomplete="name" aria-label="Ism">
+      <div class="choice">
+        <label><input type="radio" name="att" value="yes" checked> <span data-i18n="yes">Albatta kelaman</span></label>
+        <label><input type="radio" name="att" value="no"> <span data-i18n="no">Afsus, kela olmayman</span></label>
+      </div>
+      <p class="note" id="rsvpNote" role="alert"></p>
+      <button class="btn solid" type="submit" data-i18n="send">Javob yuborish</button>
+    </form>
+    <p class="ok" id="rsvpOk" hidden></p>
+  </div>
+</section>
+
+<section class="dark" id="book">
+  <div class="wrap">
+    <h2 class="title" data-i18n="book">Mehmonlar kitobi</h2>
+    <p class="book-sub" data-i18n="bookSub">Yosh juftlikka yaxshi tilaklaringizni qoldiring</p>
+    <form class="form" id="bookForm" novalidate>
+      <input type="text" id="bookName" placeholder="Ismingizni kiriting" data-i18n-ph="yourName" autocomplete="name" aria-label="Ism">
+      <textarea id="bookMsg" placeholder="Tilak va duolaringizni yozing" data-i18n-ph="wish" aria-label="Xabar"></textarea>
+      <p class="note" id="bookNote" role="alert"></p>
+      <button class="btn solid" type="submit" data-i18n="sendMsg">Xabar yuborish</button>
+    </form>
+    <div class="wishes" id="wishes"></div>
+  </div>
+</section>
+
+<footer>
+  <svg class="orn" aria-hidden="true"><use href="#star8"/></svg>
+  <div class="script" id="footNames">Shahzod &amp; Dilnavo</div>
+  <p class="see" data-i18n="see">Sizni intizorlik bilan kutamiz!</p>
+  <p class="date" id="footDate">18 Noyabr 2026</p>
+</footer>
+
+<script>
+const I18N = {
+  uz: {
+    intro1: "Aziz va qadrli insonlar!", intro2: "Eng baxtli kunimizni siz bilan baham ko'rmoqchimiz", open: "Taklifnomani ochish",
+    dear: "Hurmatli mehmonlarimiz",
+    invite: "Ikki yurak bir umrga qo'shiladigan quvonchli kunda sizni nikoh to'yimizga, “{venue}” to'yxonasiga mehr bilan taklif etamiz",
+    regards: "Hurmat va ehtirom bilan,", thanks: "Tashrifingiz davramizga ziynat, quvonchimizga to'lalik bag'ishlaydi. Duolaringizni kutamiz.",
+    date: "Sana", left: "Baxtli kunimizgacha qolgan vaqt", days: "Kun", hours: "Soat", mins: "Daqiqa", secs: "Soniya",
+    venue: "To'yxona", location: "Joylashuv", locSub: "Quvonch va mehr davrasi shu yerda to'planadi", route: "Marshrutni ochish",
+    rsvpTitle: "Davramizga kelasizmi?", rsvpSub: "Javobingizni oldindan bilsak, quvonamiz",
+    yourName: "Ismingizni kiriting", yes: "Albatta kelaman", no: "Afsus, kela olmayman", send: "Javob yuborish",
+    needName: "Iltimos, ismingizni kiriting.", needMsg: "Iltimos, xabaringizni yozing.",
+    okYes: "Rahmat! Sizni intizorlik bilan kutamiz.", okNo: "Javobingiz uchun rahmat. Duolaringiz biz uchun aziz.",
+    book: "Mehmonlar kitobi", wish: "Tilak va duolaringizni yozing", sendMsg: "Xabar yuborish",
+    emptyBook: "Yosh oilaga birinchi tilakni siz qoldiring.",
+    bookSub: "Yosh juftlikka yaxshi tilaklaringizni qoldiring", program: "Kecha dasturi", addCal: "Taqvimga qo'shish", see: "Sizni intizorlik bilan kutamiz!", wedding: "To'y",
+    welcome: "Mehmonlarni kutib olish", start: "To'y marosimi boshlanishi", dinner: "Dasturxon va tabriklar", dance: "Raqs va ko'ngilochar dastur", end: "Kechaning yakuni",
+    months: ["Yanvar","Fevral","Mart","Aprel","May","Iyun","Iyul","Avgust","Sentabr","Oktabr","Noyabr","Dekabr"],
+    days7: ["Dush","Sesh","Chor","Pay","Jum","Shan","Yak"],
+    weekdays: ["Yakshanba","Dushanba","Seshanba","Chorshanba","Payshanba","Juma","Shanba"],
+    rsvpMsg: "Assalomu alaykum! Men {name}. {answer}",
+    ansYes: "To'yga kelaman.", ansNo: "Afsuski, kela olmayman."
+  },
+  ru: {
+    intro1: "Дорогие и близкие нам люди!", intro2: "Мы хотим разделить с вами самый счастливый день нашей жизни", open: "Открыть приглашение",
+    dear: "Дорогие гости",
+    invite: "В день, когда два сердца соединяются на всю жизнь, мы с радостью приглашаем вас на нашу свадьбу в банкетный зал «{venue}»",
+    regards: "С любовью и уважением,", thanks: "Ваше присутствие украсит наш праздник и сделает его по-настоящему тёплым.",
+    date: "Дата", left: "До нашего счастливого дня осталось", days: "Дней", hours: "Часов", mins: "Минут", secs: "Секунд",
+    venue: "Место проведения", location: "Как добраться", locSub: "Здесь соберутся самые близкие и дорогие нам люди", route: "Построить маршрут",
+    rsvpTitle: "Вы будете с нами?", rsvpSub: "Будем рады узнать ваш ответ заранее",
+    yourName: "Введите ваше имя", yes: "Обязательно приду", no: "К сожалению, не смогу", send: "Отправить ответ",
+    needName: "Пожалуйста, введите имя.", needMsg: "Пожалуйста, напишите сообщение.",
+    okYes: "Спасибо! Будем вас ждать.", okNo: "Спасибо за ответ. Мы будем рады вашим пожеланиям.",
+    book: "Книга гостей", wish: "Напишите тёплые слова и пожелания", sendMsg: "Отправить",
+    emptyBook: "Напишите первое пожелание молодожёнам.",
+    bookSub: "Оставьте добрые пожелания молодожёнам", program: "Программа вечера", addCal: "Добавить в календарь", see: "С нетерпением ждём вас!", wedding: "Свадьба",
+    welcome: "Встреча гостей", start: "Начало торжества", dinner: "Ужин и поздравления", dance: "Танцы и развлекательная программа", end: "Завершение вечера",
+    months: ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],
+    days7: ["Пн","Вт","Ср","Чт","Пт","Сб","Вс"],
+    weekdays: ["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"],
+    rsvpMsg: "Здравствуйте! Это {name}. {answer}",
+    ansYes: "Приду на свадьбу.", ansNo: "К сожалению, не смогу прийти."
+  },
+  en: {
+    intro1: "Dear friends and family!", intro2: "We would love to share the happiest day of our lives with you", open: "Open invitation",
+    dear: "Dear guests",
+    invite: "On the day two hearts become one for life, we warmly invite you to our wedding at the “{venue}” banquet hall",
+    regards: "With love and respect,", thanks: "Your presence will grace our celebration and make our joy complete.",
+    date: "Date", left: "Until our happy day", days: "Days", hours: "Hours", mins: "Minutes", secs: "Seconds",
+    venue: "Venue", location: "Location", locSub: "Where our dearest people will gather", route: "Open route",
+    rsvpTitle: "Will you be with us?", rsvpSub: "We'd be glad to hear from you in advance",
+    yourName: "Enter your name", yes: "I will be there", no: "Sorry, I can't make it", send: "Send reply",
+    needName: "Please enter your name.", needMsg: "Please write a message.",
+    okYes: "Thank you! We look forward to seeing you.", okNo: "Thank you for letting us know. We'd love your blessings.",
+    book: "Guest book", wish: "Write your wishes and blessings", sendMsg: "Send message",
+    emptyBook: "Be the first to leave a wish for the couple.",
+    bookSub: "Leave your warm wishes for the newlyweds", program: "Evening program", addCal: "Add to calendar", see: "We can't wait to see you!", wedding: "Wedding",
+    welcome: "Guest arrival", start: "Ceremony begins", dinner: "Dinner and toasts", dance: "Music and dancing", end: "End of the evening",
+    months: ["January","February","March","April","May","June","July","August","September","October","November","December"],
+    days7: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+    weekdays: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    rsvpMsg: "Hello! This is {name}. {answer}",
+    ansYes: "I will attend the wedding.", ansNo: "Sorry, I won't be able to come."
+  }
+};
+
+let lang = "uz";
+const $ = id => document.getElementById(id);
+const t = k => I18N[lang][k];
+const target = new Date(CONFIG.date);
+const pad = n => String(n).padStart(2, "0");
+const wishes = []; // kept in memory for this visit only
+
+function renderStatic() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => el.placeholder = t(el.dataset.i18nPh));
+
+  const both = CONFIG.groom + " & " + CONFIG.bride;
+  $("inviteText").textContent = t("invite").replace("{venue}", CONFIG.venueName);
+  $("names").textContent = both;
+  $("footNames").textContent = both;
+  $("mono").textContent = CONFIG.monogram || (CONFIG.groom[0] + " & " + CONFIG.bride[0]);
+  $("venueName").textContent = CONFIG.venueName;
+  $("venueAddr").textContent = CONFIG.address;
+
+  const d = target;
+  $("dayno").textContent = d.getDate();
+  $("monthyear").textContent = t("months")[d.getMonth()] + " " + d.getFullYear();
+  $("weekday").textContent = t("weekdays")[d.getDay()] + ", " + pad(d.getHours()) + ":" + pad(d.getMinutes());
+  $("footDate").textContent = d.getDate() + " " + t("months")[d.getMonth()] + " " + d.getFullYear();
+  document.title = both;
+
+  renderCalendar();
+  renderTimeline();
+  renderWishes();
+}
+
+function renderCalendar() {
+  const y = target.getFullYear(), m = target.getMonth();
+  $("calTitle").textContent = t("months")[m] + " " + y;
+  const first = (new Date(y, m, 1).getDay() + 6) % 7; // Monday first
+  const days = new Date(y, m + 1, 0).getDate();
+  let html = t("days7").map(x => `<div class="dow">${x}</div>`).join("");
+  for (let i = 0; i < first; i++) html += "<div></div>";
+  for (let i = 1; i <= days; i++) html += `<div class="d${i === target.getDate() ? " on" : ""}">${i}</div>`;
+  $("calGrid").innerHTML = html;
+}
+
+function renderTimeline() {
+  $("timeline").innerHTML = CONFIG.schedule
+    .map(([time, key]) => `<div class="row"><time>${time}</time><span>${t(key)}</span></div>`).join("");
+}
+
+function renderWishes() {
+  const box = $("wishes");
+  box.innerHTML = "";
+  if (!wishes.length) {
+    const p = document.createElement("p");
+    p.className = "empty"; p.textContent = t("emptyBook");
+    box.appendChild(p); return;
+  }
+  wishes.slice().reverse().forEach(w => {
+    const el = document.createElement("div"); el.className = "wish";
+    const p = document.createElement("p"); p.textContent = "“" + w.msg + "”";
+    const s = document.createElement("small"); s.textContent = w.name;
+    el.append(p, s); box.appendChild(el);
+  });
+}
+
+function tick() {
+  const diff = Math.max(0, target - new Date());
+  $("cd-d").textContent = Math.floor(diff / 864e5);
+  $("cd-h").textContent = pad(Math.floor(diff / 36e5) % 24);
+  $("cd-m").textContent = pad(Math.floor(diff / 6e4) % 60);
+  $("cd-s").textContent = pad(Math.floor(diff / 1e3) % 60);
+}
+
+// map
+const q = encodeURIComponent(CONFIG.mapQuery);
+$("mapFrame").src = `https://maps.google.com/maps?q=${q}&output=embed`;
+$("routeBtn").href = CONFIG.mapLink || `https://www.google.com/maps/dir/?api=1&destination=${q}`;
+
+// opening gate
+$("openBtn").addEventListener("click", () => {
+  const gate = $("gate");
+  gate.classList.add("open");
+  document.documentElement.classList.remove("locked");
+  window.scrollTo(0, 0);
+  setTimeout(() => {
+    gate.hidden = true;
+    const inv = $("invite");
+    inv.setAttribute("tabindex", "-1");
+    inv.focus({ preventScroll: true });
+    window.scrollTo(0, 0);
+  }, 1800);
+});
+
+// add to calendar (.ics)
+const icsDate = d => d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) + "T" + pad(d.getHours()) + pad(d.getMinutes()) + "00";
+const icsText = x => x.replace(/([,;])/g, "\\$1");
+$("calBtn").addEventListener("click", () => {
+  const [eh, em] = CONFIG.schedule[CONFIG.schedule.length - 1][0].split(":").map(Number);
+  const end = new Date(target); end.setHours(eh, em, 0, 0);
+  if (end <= target) end.setTime(target.getTime() + 4 * 36e5);
+  const ics = [
+    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Taklifnoma//UZ//EN", "BEGIN:VEVENT",
+    "UID:" + Date.now() + "@taklifnoma",
+    "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z",
+    "DTSTART:" + icsDate(target), "DTEND:" + icsDate(end),
+    "SUMMARY:" + icsText(t("wedding") + ": " + CONFIG.groom + " & " + CONFIG.bride),
+    "LOCATION:" + icsText(CONFIG.venueName + ", " + CONFIG.address),
+    "END:VEVENT", "END:VCALENDAR"
+  ].join("\r\n");
+  const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
+  const a = document.createElement("a");
+  a.href = url; a.download = "to'y-taklifnomasi.ics";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+
+// language
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
+  lang = b.dataset.lang;
+  document.querySelectorAll(".lang button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  renderStatic();
+}));
+
+// RSVP
+$("rsvpForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = $("rsvpName").value.trim();
+  const att = document.querySelector("input[name=att]:checked").value;
+  if (!name) { $("rsvpNote").textContent = t("needName"); $("rsvpName").focus(); return; }
+  $("rsvpNote").textContent = "";
+  $("rsvpForm").hidden = true;
+  const ok = $("rsvpOk");
+  ok.hidden = false;
+  ok.textContent = att === "yes" ? t("okYes") : t("okNo");
+  if (CONFIG.whatsapp) {
+    const text = t("rsvpMsg").replace("{name}", name).replace("{answer}", att === "yes" ? t("ansYes") : t("ansNo"));
+    window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`, "_blank");
+  }
+});
+
+// guest book
+$("bookForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = $("bookName").value.trim(), msg = $("bookMsg").value.trim();
+  if (!name) { $("bookNote").textContent = t("needName"); $("bookName").focus(); return; }
+  if (!msg) { $("bookNote").textContent = t("needMsg"); $("bookMsg").focus(); return; }
+  $("bookNote").textContent = "";
+  wishes.push({ name, msg });
+  $("bookMsg").value = "";
+  renderWishes();
+});
+
+renderStatic();
+tick();
+setInterval(tick, 1000);
+</script>
+</body>
+</html>
